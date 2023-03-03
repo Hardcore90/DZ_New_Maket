@@ -290,3 +290,5 @@ a {
     background-color: #E8E8E8;
     color: #F16D7F;
 }
+
+@media (min-width:768px) and (max-width:1024px) {}
