@@ -86,19 +86,18 @@ a {
 
 .header-promo {
     display: flex;
-    justify-content: space-between;
     gap: 63px;
+    max-width: 1600px;
 }
 
 .header-promo-img {
-    max-width: 570px;
-    width: 100%;
-    min-height: 764px;
+    width: 800px;
+    height: 764px;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-image: url(../img/header_img.png);
     background-size: cover;
-    background-position: right;
+    background-position: center;
 }
 
 .header-promo-title {
@@ -166,23 +165,26 @@ a {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    background-size: cover;
 }
 
 
 .top-content-item-img1 {
     background-image: url(../img/woman.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .top-content-item-img2 {
     background-image: url(../img/man.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .top-content-item-img3 {
     background-image: url(../img/kid.png);
     background-repeat: no-repeat;
-
+    background-size: cover;
 }
 
 .top-content-item-txt {
@@ -289,4 +291,62 @@ a {
 .bottom-content-btn:active {
     background-color: #E8E8E8;
     color: #F16D7F;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .center {
+        max-width: 736px;
+    }
+
+    .header-left {
+        margin: 18px 0 18px 32px;
+    }
+
+    .header-right {
+        margin: 18px 32px 18px 0;
+    }
+
+    .header-promo {
+        gap: 39px;
+        justify-content: space-between;
+    }
+
+    .header-promo-img {
+        width: 386px;
+        height: 368px;
+    }
+
+    .header-promo-title {
+        margin-top: 138px;
+        max-width: 311px;
+    }
+
+    .header-promo-title-main {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .header-promo-title-subtitle {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .top-content-list {
+        gap: 19px;
+        grid-template-columns: repeat(3, 232px);
+    }
+
+    .top-content-list-item-big {
+        max-width: 736px;
+    }
+
+    .top-content-item-link {
+        min-height: 168px;
+    }
+
+    .bottom-content-list {
+        gap: 16px;
+        grid-template-columns: repeat(2, 360px);
+    }
 }
