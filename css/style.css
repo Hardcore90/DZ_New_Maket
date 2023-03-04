@@ -223,9 +223,10 @@ a {
 .bottom-content-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(360px, 360px));
     gap: 30px;
     margin-bottom: 58px;
+    justify-content: center;
 }
 
 .bottom-content-list-item {
