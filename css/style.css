@@ -164,7 +164,11 @@ a {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    background-position: center;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 
@@ -172,18 +176,30 @@ a {
     background-image: url(../img/woman.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 .top-content-item-img2 {
     background-image: url(../img/man.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 .top-content-item-img3 {
     background-image: url(../img/kid.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 .top-content-item-txt {
