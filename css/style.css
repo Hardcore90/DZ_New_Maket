@@ -219,7 +219,11 @@ a {
 /* -------end top content----- */
 /* -------bottom content------ */
 
-.bottom-content {}
+.bottom-content {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .bottom-content-title {
     font-size: 30px;
@@ -240,7 +244,7 @@ a {
 .bottom-content-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 360px));
+    grid-template-columns: repeat(3, minmax(360px, 360px));
     gap: 30px;
     margin-bottom: 58px;
     justify-content: center;
@@ -365,4 +369,97 @@ a {
         gap: 16px;
         grid-template-columns: repeat(2, 360px);
     }
+}
+
+@media (min-width: 320px) and (max-width:767px) {
+
+    .center {
+        max-width: 343px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .account-btn,
+    .cart-btn-link {
+        display: none;
+    }
+
+    .header-right {
+        justify-content: right;
+    }
+
+    .header-promo-img {
+        display: none;
+    }
+
+    .header-promo {
+        width: 100%;
+    }
+
+    .header-promo-title {
+        max-width: 263px;
+        margin: 149px auto;
+    }
+
+    .header-promo-title-main {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .header-promo-title-subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .top-content {
+        margin-bottom: 64px;
+    }
+
+    .top-content-list {
+        gap: 32px;
+        grid-template-columns: repeat(1, minmax(320px, 100%));
+    }
+
+    .top-content-item-img1 {
+        min-height: 247px;
+    }
+
+    .top-content-item-img2 {
+        min-height: 249px;
+    }
+
+    .top-content-item-img3 {
+        min-height: 248px;
+    }
+
+    .top-content-item-link-big {
+        min-height: 111px;
+    }
+
+    .top-content-list-item-big {
+
+        min-height: 111px;
+    }
+
+    .bottom-content {
+        margin: 0 auto;
+    }
+
+    .bottom-content-list-img-link img {
+        width: 100%;
+    }
+
+    .bottom-content-txt {
+        margin-bottom: 65px;
+    }
+
+    .bottom-content-list {
+        grid-template-columns: repeat(1, minmax(320px, 360px));
+        margin-bottom: 40.61px;
+    }
+
+    .bottom-content-btn-wrp {
+        margin-bottom: 85px;
+    }
+
 }
