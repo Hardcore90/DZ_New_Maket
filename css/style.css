@@ -688,6 +688,18 @@ button[type="submit"]:active {
     margin: 24px 0 24px 0;
 }
 
+.footer-list-link svg {
+    fill: white;
+}
+
+.footer-list-link:hover svg {
+    fill: #FF6A6A;
+}
+
+.footer-list-link:active svg {
+    fill: white;
+}
+
 /*--------footer end  ----------- */
 @media (min-width:768px) and (max-width:1024px) {
 
