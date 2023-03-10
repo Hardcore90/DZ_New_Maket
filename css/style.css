@@ -72,6 +72,7 @@ a {
     min-height: 20px;
     transition: width 1s ease;
     border: 2px solid #fff;
+    border-radius: 10px;
 }
 
 .search-btn-img {
@@ -450,6 +451,244 @@ a {
     color: #F16D7F;
 }
 
+/* ------bottom end------------- */
+/* ---------advantages---------- */
+
+.advantages {
+    background: #222224;
+    padding: 111px 0 97px 0;
+}
+
+.advantages-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.advantages-content {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advantages-content-icon {
+    margin: 0 auto;
+}
+
+.icon1 {
+    background-image: url(../img/advantages_icon1.svg);
+    background-size: cover;
+    width: 45px;
+    height: 32px;
+    margin-bottom: 28px;
+}
+
+.icon2 {
+    background-image: url(../img/advantages_icon2.svg);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 19px;
+}
+
+.icon3 {
+    background-image: url(../img/advantages_icon3.svg);
+    background-size: cover;
+    width: 47px;
+    height: 35px;
+    margin-bottom: 25px;
+}
+
+.advantages-content-title {
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.advantages-content-txt {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ----advantages end------------ */
+/* ----subscribe ------------------- */
+
+.subscribe {}
+
+
+.subscribe-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-background-photo {
+    min-height: 448px;
+    background-image: url(../img/subscribe_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(244, 244, 244, 0.7);
+    background-blend-mode: lighten;
+}
+
+
+.subscribe-comment {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-comment-photo {
+    background-image: url(../img/comment_photo.png);
+    background-size: cover;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 30px;
+    margin-top: 97px;
+}
+
+.subscribe-comment-txt {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 30px;
+}
+
+.subscribe-form-wrp {
+    display: flex;
+    justify-content: center;
+    min-height: 49px;
+}
+
+.subscribe-form-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.subscribe-form-content-header {
+    max-height: 61px;
+    margin-bottom: 32px;
+}
+
+.subscribe-form-content-title,
+.subscribe-form-content-subtitle {
+    text-align: center;
+    color: #222224;
+}
+
+
+
+.subscribe-form-content-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.subscribe-form-content-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.subscribe-form {
+    max-width: 356px;
+    width: 100%;
+}
+
+input[type="email"] {
+    padding: 7px 74px 6px 23px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    background-color: #E1E1E1;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
+input[type="email"]::placeholder {
+    color: #8B8B8C;
+}
+
+input[type="email"]:focus {
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    display: block;
+    padding: 7px 19px 6px 21px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #F16D7F;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+button[type="submit"]:hover {
+    background-color: #fff;
+    color: #F16D7F;
+}
+
+button[type="submit"]:active {
+    background-color: #F16D7F;
+    color: #fff;
+}
+
+/*--------subscribe end ----------- */
+/*--------footer       ----------- */
+
+.footer {
+    min-height: 79px;
+    background: #222224;
+}
+
+.footer-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-license {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    margin: 30px 0 30px 0;
+}
+
+.footer-list {
+    display: flex;
+    gap: 7.29px;
+    margin: 24px 0 24px 0;
+}
+
+/*--------footer end  ----------- */
 @media (min-width:768px) and (max-width:1024px) {
 
     .center {
