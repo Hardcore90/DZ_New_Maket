@@ -50,6 +50,7 @@ const advantagesBlock = document.querySelector(".advantages");
 const cartItemsBlock = document.createElement("section");
 cartItemsBlock.classList.add("cart-items");
 cartItemsBlock.classList.add("center");
+cartItemsBlock.setAttribute("id", "cart");
 const cartItemsBlockTitle = document.createElement("h2");
 cartItemsBlockTitle.textContent = "Cart Items";
 cartItemsBlockTitle.classList.add("cart-items__title");
