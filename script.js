@@ -41,3 +41,67 @@ data.forEach(({ image, name, description, price }) => {
     `;
   listItems.insertAdjacentHTML("beforeend", productEl);
 });
+
+const addItemToCartBtn = document.querySelectorAll(".bottom-content-item-btn");
+const cartBtn = document.querySelector(".cart-btn-link");
+const cartCounter = document.querySelector(".cart-btn-link-icon-count");
+const advantagesBlock = document.querySelector(".advantages");
+
+const cartItemsBlock = document.createElement("section");
+cartItemsBlock.classList.add("cart-items");
+cartItemsBlock.classList.add("center");
+const cartItemsBlockTitle = document.createElement("h2");
+cartItemsBlockTitle.textContent = "Cart Items";
+cartItemsBlockTitle.classList.add("cart-items__title");
+
+addItemToCartBtn.forEach((element) => {
+  element.addEventListener("click", () => {
+    const card = element.closest(".bottom-content-list-item");
+
+    const productInfo = {
+      img: card.querySelector(".bottom-content-list-img").getAttribute("src"),
+      name: card.querySelector(".bottom-content-item-title").innerText,
+      price: card.querySelector(".bottom-content-item-price").innerText,
+      color: productsData.color,
+      size: productsData.size,
+    };
+    console.log(productInfo);
+    const cartItem = `
+        <div class="product">
+              <button class="btn__delete" type="button">Удалить</button>
+              <div class="product__content">
+                <img class="product__image" src="${productInfo.img}" alt="${productInfo.name}" />
+                <div class="product__desc">
+                  <h2 class="product__name">${productInfo.name} </h2>
+                  <p class="product__price_label">
+                    Price:<span class="product__price"> ${productInfo.price}</span>
+                  </p>
+                  <p class="product__color">Color: Red</p>
+                  <p class="product__size">Size: XL</p>
+                  <div class="product__quantity">
+                    <label class="input__label">Quantity:</label>
+                    <input class="input__quantity" type="number" value="1"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+    advantagesBlock.insertAdjacentElement("afterend", cartItemsBlock);
+    if (cartItemsBlock.innerHTML == "") {
+      cartItemsBlock.appendChild(cartItemsBlockTitle);
+    }
+    cartItemsBlock.insertAdjacentHTML("beforeend", cartItem);
+
+    const buttonsDelete = document.querySelectorAll(".btn__delete");
+    buttonsDelete.forEach((button) => {
+      button.addEventListener("click", () => {
+        const product = button.closest(".product");
+        product.remove();
+      });
+    });
+  });
+});
+
+if (cartItemsBlock.children.length === 1) {
+  cartItemsBlock.remove();
+}
