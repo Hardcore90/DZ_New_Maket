@@ -65,7 +65,6 @@ addItemToCartBtn.forEach((element) => {
       color: productsData.color,
       size: productsData.size,
     };
-    console.log(productInfo);
     const cartItem = `
         <div class="product">
               <button class="btn__delete" type="button">Удалить</button>
@@ -97,11 +96,10 @@ addItemToCartBtn.forEach((element) => {
       button.addEventListener("click", () => {
         const product = button.closest(".product");
         product.remove();
+        if (cartItemsBlock.children.length === 1) {
+          cartItemsBlock.remove();
+        }
       });
     });
   });
 });
-
-if (cartItemsBlock.children.length === 1) {
-  cartItemsBlock.remove();
-}
