@@ -253,12 +253,11 @@ input[type="checkbox"]:checked ~ .burger-menu-box {
 }
 
 .cart-btn-link-icon-count {
-  display: block;
   width: 19px;
   height: 19px;
   background-color: #f16d7f;
   border-radius: 50%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: #fff;

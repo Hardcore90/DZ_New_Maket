@@ -58,6 +58,8 @@ cartItemsBlockTitle.classList.add("cart-items__title");
 addItemToCartBtn.forEach((element) => {
   element.addEventListener("click", () => {
     const card = element.closest(".bottom-content-list-item");
+    cartCounter.innerText == ++cartCounter.innerText;
+    cartCounter.style.display = "flex";
 
     const productInfo = {
       img: card.querySelector(".bottom-content-list-img").getAttribute("src"),
@@ -97,6 +99,12 @@ addItemToCartBtn.forEach((element) => {
       button.addEventListener("click", () => {
         const product = button.closest(".product");
         product.remove();
+        if (parseInt(cartCounter.innerText) > 0) {
+          cartCounter.innerText == --cartCounter.innerText;
+        } else {
+          cartCounter.style.display = "none";
+        }
+
         if (cartItemsBlock.children.length === 1) {
           cartItemsBlock.remove();
         }
